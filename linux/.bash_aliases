@@ -4,8 +4,12 @@
 alias cl='clear'
 
 # Navigation:
-alias doc='cd /home/calvin/Documents'
-alias down='cd /home/calvin/Downloads'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias doc='cd ~/Documents'
+alias down='cd ~/Downloads'
+alias desk='cd ~/Desktop'
 alias lsl='ls -l'
 alias lsa='ls -a'
 function cdl () {
