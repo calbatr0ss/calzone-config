@@ -1,9 +1,12 @@
 # Aliases
 
-# Tidying up:
+# Vim
+alias vi='nvim'
+
+# Tidying up
 alias cl='clear'
 
-# Navigation:
+# Navigation
 alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
@@ -21,7 +24,7 @@ function cls () {
   ls
 }
 
-# Compiling:
+# Compiling
 alias m='make'
 alias r='./run'
 alias mc='make clean'
@@ -33,3 +36,12 @@ function latest () {
   sudo apt-get dist-upgrade;
   sudo apt autoremove
 }
+
+# Git
+alias gs='git status'
+alias gco='git checkout'
+alias gl='git pull'
+alias gh='git push'
+
+# Fun
+alias yeet='rm -rf'
