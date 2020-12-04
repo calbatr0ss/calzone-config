@@ -1,0 +1,35 @@
+let g:airline_extensions = ['branch', 'netrw', 'ale', 'tabline']
+colorscheme base16-tomorrow-night
+
+set cursorline
+
+highlight CursorLineNr guifg=#073642 guibg=#fdf6e3 gui=NONE
+
+set clipboard=unnamedplus
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> ZZ :bp\|bd#<CR>
+vmap K $%
+
+let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+let g:ale_linters                  = {
+            \ 'javascript': ['eslint'],
+    \}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fix_on_save = 1
+
+" let g:neoformat_basic_format_retab = 1
+" let g:neoformat_basic_format_trim  = 1
+" let g:neoformat_enabled_javascript = ['prettier-eslint', 'prettier', 'eslint']
+" autocmd BufWritePre *.js,*.json,*.jsx,*.vue Neoformat
+
+let g:prettier#autoformat_require_pragma = 0
+
+
+let NERDTreeShowHidden=1
